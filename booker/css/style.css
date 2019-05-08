@@ -5,11 +5,8 @@
 * {
   box-sizing: border-box;
   user-select: none;
-  cursor: default;
+  text-decoration:none;
 }
-
-
-
 
 html {
   font-family: sans-serif;
@@ -23,7 +20,6 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   font-size: calc(var(--fontSize)/35);
-  /* border: 1px solid red; */
   width: 100vw;
   height:100vh;
   display: flex;
@@ -35,12 +31,10 @@ body {
 .top {
   height: 20vh;
   width: 100%;
-    /* border: 1px solid orange; */
 }
 .middle {
   height: 60vh;
   width: 80%;
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,19 +43,36 @@ body {
 
 p {
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
+.iconWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+  width: 95%;
+}
+
+.width20 {
+    width: 20%;
+}
 
 .bottom {
   height: 20vh;
   width: 100%;
-
-  /* border: 1px solid lime; */
 }
 
-#displayContact {
+img {
+  width: 100%;
+}
 
+#displayContact a {
+    text-decoration:none;
+    color: #ccc;
     position: absolute;
     bottom: 0.5%;
     right: 0.5%;

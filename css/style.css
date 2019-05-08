@@ -27,12 +27,17 @@ body {
 }
 
 .top {
-  height: 20vh;
-  width: 100%;
-    /* border: 1px solid orange; */
+  height: 40vh;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid orange; */
+  padding-top: 7vh;
 }
 .middle {
-  height: 60vh;
+  height: 20vh;
   width: 90%;
   /* border: 1px solid blue; */
   display: flex;
@@ -40,112 +45,62 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.bottom {
+  height: 40vh;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid orange; */
+  padding-bottom: 7vh;
+}
 
-.wrapper10 {
+.iconWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.width10 {
     width: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-.wrapper13 {
+.width13 {
     width: 13%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-.wrapper15 {
+.width15 {
     width: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
+.width20 {
+    width: 20%;
+}
 
-.wrapper25 {
+.width25 {
     width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-
-
-.clock {
+.icon {
   width: 95%;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
   -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
   transition: width 0.15s;
-  /* border: 1px solid blue; */
+  /* border: 1px solid cyan; */
 }
-.clock:hover {
+.icon:hover {
   width: 100%;
   transition-timing-function: ease-in;
-  -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.15s;
-}
-
-
-.tetris {
-    width: 95%;
-    transition-timing-function: ease-in;
-    -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-    transition: width 0.15s;
-    /* border: 1px solid blue; */
-}
-.tetris:hover {
-    width: 100%;
-    transition-timing-function: ease-in;
-    -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-    transition: width 0.15s;
-    /* border: 1px solid blue; */
-}
-
-.rockPaperScissors {
-  width: 95%;
-  transition-timing-function: ease-in;
-  -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.15s;
-}
-
-.rockPaperScissors:hover {
-    width: 100%;
-    transition-timing-function: ease-in;
-    -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-    transition: width 0.15s;
-}
-
-.weather {
-  width: 95%;
-  transition-timing-function: ease-in;
-  -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.15s;
-}
-.weather:hover{
-  width:100%;
-  transition-timing-function: ease-in;
-  -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.15s;
+  -webkit-transition: width 0.05s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.05s;
 }
 
 img {
   width: 100%;
 }
 
-.bottom {
-  height: 20vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid lime; */
-}
 
 #displayVersion {
 
