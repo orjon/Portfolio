@@ -27,7 +27,7 @@ body {
 }
 
 .top {
-  height: 40vh;
+  height: 50vh;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -36,8 +36,9 @@ body {
   /* border: 1px solid orange; */
   padding-top: 7vh;
 }
+
 .middle {
-  height: 20vh;
+  height: 0vh;
   width: 90%;
   /* border: 1px solid blue; */
   display: flex;
@@ -46,7 +47,7 @@ body {
   align-items: center;
 }
 .bottom {
-  height: 40vh;
+  height: 50vh;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -57,10 +58,13 @@ body {
 }
 
 .iconWrapper{
+    width: 33%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid yellow; */
 }
 
 .width10 {
@@ -83,15 +87,39 @@ body {
     width: 25%;
 }
 
+.width50 {
+    width: 50%;
+}
+
+.width65 {
+    width: 65%;
+}
+
+.width75 {
+    width: 75%;
+}
+
+.width90 {
+    width: 90%;
+}
+
+.width100 {
+    width: 100%;
+}
+
 .icon {
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
   transition-timing-function: ease-out;
   -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
   transition: width 0.15s;
   /* border: 1px solid cyan; */
 }
 .icon:hover {
-  width: 100%;
+  width:65%;
   transition-timing-function: ease-in;
   -webkit-transition: width 0.05s; /* For Safari 3.1 to 6.0 */
   transition: width 0.05s;
@@ -101,9 +129,7 @@ img {
   width: 100%;
 }
 
-
 #displayVersion {
-
     color: #666;
     position: absolute;
     bottom: 0.5%;
