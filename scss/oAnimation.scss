@@ -38,11 +38,16 @@ $oSize: 75%;
   left: 0%;
 }
 
+#hello {
+  color: $colorHello;
+  font-size: $fontSizeHello;
+}
+
 #circleRed {
   position: absolute;
   will-change: position;
   fill: rgba(255,0,255,1);
-  // border: 1px solid tomato;
+  border: $devBorder solid rgb(255,0,255);
 }
 
 #circleCyanUnderlay {
@@ -55,7 +60,7 @@ $oSize: 75%;
   position: absolute;
   will-change: position;
   fill: rgba(0,220,235,.95);
-  // border: 1px solid blue;
+  border: $devBorder solid rgb(0,220,235);
 }
 
 #circleWhiteUnderlay {
@@ -68,6 +73,7 @@ $oSize: 75%;
   position: absolute;
   a{
     fill: rgba(255,255,255,0.97);
+    border: $devBorder solid rgb(255,255,255);
   }
   // display:none;
   // border: 1px solid lightgrey;

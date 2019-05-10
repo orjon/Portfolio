@@ -12,10 +12,15 @@
   height: 75%;
   left: 0%; }
 
+#hello {
+  color: #EEE;
+  font-size: 4vh; }
+
 #circleRed {
   position: absolute;
   will-change: position;
-  fill: magenta; }
+  fill: magenta;
+  border: 0px solid magenta; }
 
 #circleCyanUnderlay {
   position: absolute;
@@ -25,7 +30,8 @@
 #circleCyan {
   position: absolute;
   will-change: position;
-  fill: rgba(0, 220, 235, 0.95); }
+  fill: rgba(0, 220, 235, 0.95);
+  border: 0px solid #00dceb; }
 
 #circleWhiteUnderlay {
   position: absolute;
@@ -34,7 +40,8 @@
 #circleWhite {
   position: absolute; }
   #circleWhite a {
-    fill: rgba(255, 255, 255, 0.97); }
+    fill: rgba(255, 255, 255, 0.97);
+    border: 0px solid white; }
 
 .animateRed {
   -webkit-animation: animateRed 10.5s ease-in-out infinite alternate-reverse both;
@@ -148,7 +155,7 @@ img {
   box-sizing: border-box;
   user-select: none;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; }
@@ -175,7 +182,7 @@ section.intro {
   align-items: center;
   border: 0px solid red; }
 
-section.projects {
+section#projects {
   height: 100vh;
   width: 99%;
   display: flex;
