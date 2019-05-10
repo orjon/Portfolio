@@ -50,7 +50,8 @@
 
 #hello {
   color: #EEE;
-  font-size: 4vh; }
+  font-size: 4vh;
+  text-shadow: 00px 0px 4px  white; }
 
 #circleRed {
   position: absolute;
@@ -160,11 +161,11 @@
 .navArrow {
   height: 3.5vh;
   border: 0px solid cyan;
-  opacity: 0.75;
+  opacity: 0.85;
   transition-timing-function: ease-in;
-  -webkit-transition: opacity 0.35s;
+  -webkit-transition: opacity 1s;
   /* For Safari 3.1 to 6.0 */
-  transition: opacity 0.35s;
+  transition: opacity 1s;
   transition-timing-function: ease-in;
   -webkit-transition: height 0.15s;
   /* For Safari 3.1 to 6.0 */
@@ -173,9 +174,9 @@
     height: 4.0vh;
     opacity: 0.95;
     transition-timing-function: ease-out;
-    -webkit-transition: opacity 0.5s;
+    -webkit-transition: opacity 3s;
     /* For Safari 3.1 to 6.0 */
-    transition: opacity 0.5s;
+    transition: opacity 3s;
     transition-timing-function: ease-out;
     -webkit-transition: height 0.2s;
     /* For Safari 3.1 to 6.0 */
