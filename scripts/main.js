@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const icons = document.querySelectorAll('.icon')
   const soundWoosh = document.querySelector('.soundWoosh')
+  // const basicScroll = require('basicscroll')
 
   //
   // const root = document.documentElement
@@ -41,9 +42,19 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-
-
-
+  // const instance = basicScroll.create({
+  //   elem: document.getElementById('circleWhite'),
+  //   from: 'top-bottom',
+  //   to: 'middle-middle',
+  //   props: {
+  //     '--opacity': {
+  //       from: .99,
+  //       to: .5
+  //     }
+  //   }
+  // })
+  //
+  // instance.start()
 
 
 

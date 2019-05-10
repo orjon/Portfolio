@@ -17,7 +17,7 @@ $animDist6: 97;
 
 
 $animDistXMult: .1;
-$animDistYMult: .05;
+$animDistYMult: .01;
 $oSize: 75%;
 
 
@@ -40,18 +40,21 @@ $oSize: 75%;
 
 #circleRed {
   position: absolute;
+  will-change: position;
   fill: rgba(255,0,255,1);
   // border: 1px solid tomato;
 }
 
 #circleCyanUnderlay {
   position: absolute;
+  will-change: position;
   fill: rgba(255,255,255,1);
 }
 
 #circleCyan {
   position: absolute;
-  fill: rgba(0,220,235,0.55);
+  will-change: position;
+  fill: rgba(0,220,235,.95);
   // border: 1px solid blue;
 }
 
@@ -60,27 +63,25 @@ $oSize: 75%;
   fill: rgba(255,255,255,1);
 }
 
+
 #circleWhite {
   position: absolute;
-  fill: rgba(255,255,255,0.90);
+  a{
+    fill: rgba(255,255,255,0.97);
+  }
   // display:none;
   // border: 1px solid lightgrey;
 }
 
 
 .animateRed {
-	-webkit-animation: animateRed 7.5s ease-in-out infinite alternate-reverse both;
-	        animation: animateRed 7.5s ease-in-out infinite alternate-reverse both;
+	-webkit-animation: animateRed 10.5s ease-in-out infinite alternate-reverse both;
+	        animation: animateRed 10.5s ease-in-out infinite alternate-reverse both;
 }
 
 .animateCyan {
 	-webkit-animation: animateCyan 8.3s ease-in-out infinite alternate-reverse both;
 	        animation: animateCyan 8.3s ease-in-out infinite alternate-reverse both;
-}
-
-.trans-white {
-	-webkit-animation: transWhite 15.3s ease-in-out infinite alternate-reverse both;
-	        animation: transWhite 15.3s ease-in-out infinite alternate-reverse both;
 }
 
 
@@ -96,20 +97,20 @@ $oSize: 75%;
             transform: translateX($animDist6 * $animDistXMult * 1px);
   }
   40% {
-    -webkit-transform: translateY($animDist3 * $animDistXMult * 1px);
-            transform: translateY($animDist3 * $animDistXMult * 1px);
+    -webkit-transform: translateY($animDist3 * $animDistYMult * 1px);
+            transform: translateY($animDist3 * $animDistYMult * 1px);
   }
   50% {
-    -webkit-transform: translateX($animDist1 * $animDistXMult * 1px);
-            transform: translateX($animDist1 * $animDistXMult * 1px);
+    -webkit-transform: translateX($animDist2 * $animDistXMult * 1px);
+            transform: translateX($animDist2 * $animDistXMult * 1px);
   }
   75% {
     -webkit-transform: translateX($animDist5 * $animDistXMult * 1px);
             transform: translateX($animDist5 * $animDistXMult * 1px);
   }
   90% {
-    -webkit-transform: translateY($animDist5 * $animDistXMult * 1px);
-            transform: translateY($animDist5 * $animDistXMult * 1px);
+    -webkit-transform: translateY($animDist5 * $animDistYMult * 1px);
+            transform: translateY($animDist5 * $animDistYMult * 1px);
   }
   100% {
     -webkit-transform: translateX($animDist1 * $animDistXMult * 1px);
@@ -131,16 +132,16 @@ $oSize: 75%;
             transform: translateX($animDist2 * $animDistXMult * 1px);
   }
   30% {
-    -webkit-transform: translateY($animDist6 * $animDistXMult * 1px);
-            transform: translateY($animDist6 * $animDistXMult * 1px);
+    -webkit-transform: translateY($animDist6 * $animDistYMult * 1px);
+            transform: translateY($animDist6 * $animDistYMult * 1px);
   }
   45% {
-    -webkit-transform: translateX($animDist4 * $animDistXMult * 1px);
-            transform: translateX($animDist4 * $animDistXMult * 1px);
+    -webkit-transform: translateX($animDist6 * $animDistXMult * 1px);
+            transform: translateX($animDist6 * $animDistXMult * 1px);
   }
   60% {
-    -webkit-transform: translateY($animDist2 * $animDistXMult * 1px);
-            transform: translateY($animDist2 * $animDistXMult * 1px);
+    -webkit-transform: translateY($animDist2 * $animDistYMult * 1px);
+            transform: translateY($animDist2 * $animDistYMult * 1px);
   }
   80% {
     -webkit-transform: translateX($animDist3 * $animDistXMult * 1px);
@@ -151,17 +152,5 @@ $oSize: 75%;
             transform: translateX($animDist5 * $animDistXMult * 1px);
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-
-@keyframes trans-white {
-  0% {
-    -webkit-transform: opacity(0);
-            transform: opacity(0);
-  }
-  100% {
-    -webkit-transform: opacity(50%);
-            transform: opacity(50%);
   }
 }

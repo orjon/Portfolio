@@ -1,20 +1,20 @@
 .iconWrapper{
-  width: 33%;
+  width: 25%;
   height: 100%;
   @include flexRowCenter();
-  /* border: 1px solid yellow; */
+  border: $devBorder solid yellow;
 }
 
 .icon {
   @include flexColumnCenter();
-  width: 60%;
+  width: $iconProject;
   transition-timing-function: ease-out;
   -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
   transition: width 0.15s;
-  /* border: 1px solid cyan; */
+  border: $devBorder solid cyan;
 }
 .icon:hover {
-  width:65%;
+  width: $iconProjectHover;
   transition-timing-function: ease-in;
   -webkit-transition: width 0.05s; /* For Safari 3.1 to 6.0 */
   transition: width 0.05s;
