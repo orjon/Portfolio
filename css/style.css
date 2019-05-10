@@ -164,13 +164,22 @@
   transition-timing-function: ease-in;
   -webkit-transition: opacity 0.35s;
   /* For Safari 3.1 to 6.0 */
-  transition: opacity 0.35s; }
+  transition: opacity 0.35s;
+  transition-timing-function: ease-in;
+  -webkit-transition: height 0.15s;
+  /* For Safari 3.1 to 6.0 */
+  transition: height 0.15s; }
   .navArrow:hover {
+    height: 4.0vh;
     opacity: 0.95;
     transition-timing-function: ease-out;
-    -webkit-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.5s;
     /* For Safari 3.1 to 6.0 */
-    transition: opacity 0.2s; }
+    transition: opacity 0.5s;
+    transition-timing-function: ease-out;
+    -webkit-transition: height 0.2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: height 0.2s; }
 
 .top {
   height: 40vh;
