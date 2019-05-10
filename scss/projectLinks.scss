@@ -1,3 +1,25 @@
+.top {
+  height: 40vh;
+  width: 90%;
+  @include flexRowCenter();
+  border: $devBorder solid orange;
+}
+
+.middle {
+  height: 0vh;
+  width: 90%;
+  @include flexRowCenter();
+  border: $devBorder solid orange;
+}
+.bottom {
+  height: 40vh;
+  width: 90%;
+  @include flexRowCenter();
+  border: $devBorder solid orange;
+}
+
+
+
 .iconWrapper{
   width: 25%;
   height: 100%;
@@ -8,18 +30,20 @@
 .icon {
   @include flexColumnCenter();
   width: $iconProject;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in;
   -webkit-transition: width 0.15s; /* For Safari 3.1 to 6.0 */
   transition: width 0.15s;
   border: $devBorder solid cyan;
 }
 .icon:hover {
   width: $iconProjectHover;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
   -webkit-transition: width 0.05s; /* For Safari 3.1 to 6.0 */
   transition: width 0.05s;
 }
 
-img {
-  width: 100%;
+.icon {
+  img {
+    width: 100%
+  }
 }

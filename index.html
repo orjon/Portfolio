@@ -11,7 +11,7 @@
   </head>
   <body>
     <audio preload='auto' class='soundWoosh' src='audio/wooshing.mp3'></audio>
-    <section class='row intro'>
+    <section id='intro'>
         <div class='oWrapper'>
           <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox="0 0 510.24 510.24" id='circleWhiteUnderlay'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
@@ -37,55 +37,50 @@
     </section>
 
     <section id='projects'>
+      <div class='navTop'>
+        <a href='#intro'>
+          <img class='navArrow' src='./images/arrowWhite.png' alt='navigate back button'>
+        </a>
+      </div>
       <div class='row top'>
           <div class='iconWrapper'>
             <a class='icon clock' href='http://www.orjon.com/colorclock'>
-                <img  class='width65' src='./images/clock.png' alt='clock icon'>
+                <img class='width65' src='./images/clock.png' alt='clock icon'>
             </a>
           </div>
-
           <div class='iconWrapper'>
             <a class='icon tetris' href='http://www.orjon.com/tetris'>
               <img  class='width100' src='./images/tetris.png' alt='tetris icon'>
             </a>
           </div>
-
         <div class='iconWrapper'>
           <a class='icon daftpunk' href='http://www.orjon.com/daftpunk'>
-            <img  class='width50' src='./images/daftpunk.png' alt='Daft Punk icon'>
+            <img  class='width20' src='./images/daftpunk.png' alt='Daft Punk icon'>
           </a>
         </div>
-
         <div class='iconWrapper'>
           <a class='icon whackamole' href='http://www.orjon.com/mole'>
             <img  class='width50' src='./images/whackamole.png' alt='Whack-a-mole icon'>
           </a>
         </div>
-
       </div>
 
-
       <div class='row bottom'>
-
         <div class='iconWrapper'>
           <a class='icon project4' href='http://www.orjon.com/project4'>
               <img  class='width75' src='./images/project4.png' alt='project4 icon'>
           </a>
         </div>
-
         <div class='iconWrapper'>
           <a class='icon rockPaperScissors' href='http://www.orjon.com/rockpaperscissors'>
               <img class='width50' src='./images/hand_select_rock-white.png'alt='rock-paper-scissors icon'>
           </a>
         </div>
-
         <div class='iconWrapper'>
           <a class='icon weather' href='http://www.orjon.com/weather'>
               <img  class='width65' src='./images/weather.png' alt='weather icon'>
           </a>
         </div>
-
-
         <div class='iconWrapper'>
           <a class='icon booker' href='http://www.orjon.com/booker'>
               <img  class='width90' src='./images/booker.png' alt='booker icon'>
@@ -93,6 +88,7 @@
         </div>
 
       </div>
+      <div class='navBottom'></div>
   </section>
 
     <footer>

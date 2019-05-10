@@ -17,6 +17,7 @@
 }
 
 @import 'oAnimation';
+@import 'nav';
 @import 'projectLinks';
 @import 'footer';
 
@@ -34,7 +35,6 @@
 body {
   color: $textNormal;
   background-color: $colorBackground;
-
   font-weight: 300;
   min-height:100vh;
   @include flexColumnCenter();
@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
   width: 0 !important
 }
 
-section.intro {
+section#intro {
   height: 100vh;
   width: 99%;
   @include flexColumnCenter();
@@ -55,72 +55,6 @@ section#projects {
   width: 99%;
   @include flexColumnCenter();
   border: $devBorder solid red;
-}
 
 
-.top {
-  height: 50vh;
-  width: 90%;
-  @include flexRowCenter();
-  padding-top: 7vh;
-  border: $devBorder solid orange;
-}
-
-.middle {
-  height: 0vh;
-  width: 90%;
-  @include flexRowCenter();
-  border: $devBorder solid orange;
-}
-.bottom {
-  height: 50vh;
-  width: 90%;
-  @include flexRowCenter();
-  padding-bottom: 7vh;
-  border: $devBorder solid orange;
-}
-
-.width10 {
-    width: 10%;
-}
-
-.width13 {
-    width: 13%;
-}
-
-.width15 {
-    width: 15%;
-}
-
-.width20 {
-    width: 20%;
-}
-
-.width25 {
-    width: 25%;
-}
-
-.width50 {
-    width: 50%;
-}
-
-.width65 {
-    width: 65%;
-}
-
-.width75 {
-    width: 75%;
-}
-
-.width90 {
-    width: 90%;
-}
-
-.width100 {
-    width: 100%;
-}
-
-.width120 {
-    max-width: 95%;
-    max-height: 95%;
 }

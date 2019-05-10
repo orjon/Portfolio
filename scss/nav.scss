@@ -1,0 +1,32 @@
+.navTop {
+  @include flexRowCenter();
+  height: 10vh;
+  width: 90%;
+  padding-top: 3vh;
+  border: $devBorder solid magenta;
+}
+
+
+.navBottom {
+  @include flexRowCenter();
+  height: 10vh;
+  width: 90%;
+  padding-bottom: 3vh;
+  border: $devBorder solid magenta;
+}
+
+.navArrow {
+  height: 3.5vh;
+  border: $devBorder solid cyan;
+  opacity: 0.75;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 0.35s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.35s;
+
+  &:hover {
+    opacity: 0.95;
+    transition-timing-function: ease-out;
+    -webkit-transition: opacity 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.2s;
+  }
+}
