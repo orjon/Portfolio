@@ -1,0 +1,167 @@
+//
+// :root {
+//   --animDist1: 0;
+//   --animDist2: 50;
+//   --animDist3: 50;
+//   --animDist4: 50;
+//   --animDist5: 50;
+//   --animDist6: 50;
+// }
+
+$animDist1: -16;
+$animDist2: -43;
+$animDist3: -82;
+$animDist4: 17;
+$animDist5: 55;
+$animDist6: 97;
+
+
+$animDistXMult: .1;
+$animDistYMult: .05;
+$oSize: 75%;
+
+
+.oWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    postion: relative;
+    // border: 1px solid red;
+}
+
+.o {
+  width:  100%;
+  height: $oSize;
+  left: 0%;
+}
+
+#circleRed {
+  position: absolute;
+  fill: rgba(255,0,255,1);
+  // border: 1px solid tomato;
+}
+
+#circleCyanUnderlay {
+  position: absolute;
+  fill: rgba(255,255,255,1);
+}
+
+#circleCyan {
+  position: absolute;
+  fill: rgba(0,220,235,0.55);
+  // border: 1px solid blue;
+}
+
+#circleWhiteUnderlay {
+  position: absolute;
+  fill: rgba(255,255,255,1);
+}
+
+#circleWhite {
+  position: absolute;
+  fill: rgba(255,255,255,0.90);
+  // display:none;
+  // border: 1px solid lightgrey;
+}
+
+
+.animateRed {
+	-webkit-animation: animateRed 7.5s ease-in-out infinite alternate-reverse both;
+	        animation: animateRed 7.5s ease-in-out infinite alternate-reverse both;
+}
+
+.animateCyan {
+	-webkit-animation: animateCyan 8.3s ease-in-out infinite alternate-reverse both;
+	        animation: animateCyan 8.3s ease-in-out infinite alternate-reverse both;
+}
+
+.trans-white {
+	-webkit-animation: transWhite 15.3s ease-in-out infinite alternate-reverse both;
+	        animation: transWhite 15.3s ease-in-out infinite alternate-reverse both;
+}
+
+
+@keyframes animateRed {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateX($animDist6 * $animDistXMult * 1px);
+            transform: translateX($animDist6 * $animDistXMult * 1px);
+  }
+  40% {
+    -webkit-transform: translateY($animDist3 * $animDistXMult * 1px);
+            transform: translateY($animDist3 * $animDistXMult * 1px);
+  }
+  50% {
+    -webkit-transform: translateX($animDist1 * $animDistXMult * 1px);
+            transform: translateX($animDist1 * $animDistXMult * 1px);
+  }
+  75% {
+    -webkit-transform: translateX($animDist5 * $animDistXMult * 1px);
+            transform: translateX($animDist5 * $animDistXMult * 1px);
+  }
+  90% {
+    -webkit-transform: translateY($animDist5 * $animDistXMult * 1px);
+            transform: translateY($animDist5 * $animDistXMult * 1px);
+  }
+  100% {
+    -webkit-transform: translateX($animDist1 * $animDistXMult * 1px);
+            transform: translateX($animDist1 * $animDistXMult * 1px);
+
+  }
+}
+
+
+@keyframes animateCyan {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateX($animDist2 * $animDistXMult * 1px);
+            transform: translateX($animDist2 * $animDistXMult * 1px);
+  }
+  30% {
+    -webkit-transform: translateY($animDist6 * $animDistXMult * 1px);
+            transform: translateY($animDist6 * $animDistXMult * 1px);
+  }
+  45% {
+    -webkit-transform: translateX($animDist4 * $animDistXMult * 1px);
+            transform: translateX($animDist4 * $animDistXMult * 1px);
+  }
+  60% {
+    -webkit-transform: translateY($animDist2 * $animDistXMult * 1px);
+            transform: translateY($animDist2 * $animDistXMult * 1px);
+  }
+  80% {
+    -webkit-transform: translateX($animDist3 * $animDistXMult * 1px);
+            transform: translateX($animDist3 * $animDistXMult * 1px);
+  }
+  100% {
+    -webkit-transform: translateX($animDist5 * $animDistXMult * 1px);
+            transform: translateX($animDist5 * $animDistXMult * 1px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+@keyframes trans-white {
+  0% {
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  100% {
+    -webkit-transform: opacity(50%);
+            transform: opacity(50%);
+  }
+}

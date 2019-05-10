@@ -1,0 +1,115 @@
+@import 'variables';
+
+@mixin flexColumnCenter ()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowCenter ()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@import 'oAnimation';
+@import 'projectLinks';
+@import 'footer';
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  overflow-x:hidden;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  color: $textNormal;
+  background-color: $colorBackground;
+
+  font-weight: 300;
+  min-height:100vh;
+  @include flexColumnCenter();
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.intro {
+  height: 100vh;
+  width: 99%;
+  @include flexColumnCenter();
+}
+
+
+.top {
+  height: 40vh;
+  width: 90%;
+  @include flexRowCenter();
+  padding-top: 7vh;
+}
+
+.middle {
+  height: 5vh;
+  width: 90%;
+  @include flexRowCenter();
+}
+.bottom {
+  height: 40vh;
+  width: 90%;
+  @include flexRowCenter();
+  padding-bottom: 7vh;
+}
+
+.width10 {
+    width: 10%;
+}
+
+.width13 {
+    width: 13%;
+}
+
+.width15 {
+    width: 15%;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width25 {
+    width: 25%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width65 {
+    width: 65%;
+}
+
+.width75 {
+    width: 75%;
+}
+
+.width90 {
+    width: 90%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width120 {
+    max-width: 95%;
+    max-height: 95%;
+}

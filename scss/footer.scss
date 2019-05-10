@@ -1,0 +1,22 @@
+#displayVersion {
+    color: $textDim;
+    position: fixed;
+    bottom: 0.5%;
+    left: 0.5%;
+    font-size: $fontSizeNew;
+}
+
+#displayVersion a {
+    text-decoration: none;
+    color: $textBright
+
+}
+
+#displayContact a {
+    text-decoration: none;
+    color: $textNormal;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    font-size: $fontSizeNew;
+}
