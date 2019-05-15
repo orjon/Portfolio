@@ -2,38 +2,62 @@
 <html lang='en' dir='ltr'>
   <head>
     <meta charset='utf-8'>
-    <script src="scripts/basicScroll.min.js"></script>
+    <script src='scripts/basicScroll.min.js'></script>
     <script type='text/javascript' src='scripts/main.js'></script>
     <title>orjon.com</title>
     <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico' />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel='stylesheet' href='./css/style.css'>
+    <script>window.location = '#intro'</script>
   </head>
   <body>
-    <audio preload='auto' class='soundWoosh' src='audio/wooshing.mp3'></audio>
+
+    <audio preload='auto' class='soundWoosh' src='./audio/wooshing.mp3'></audio>
+
     <section id='intro'>
-        <div class='oWrapper'>
-          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox="0 0 510.24 510.24" id='circleWhiteUnderlay'>
+      <div class='navTop'></div>
+
+      <div class='centerRowSingle'>
+        <div class='introWrapper'>
+
+          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox='0 0 510.24 510.24' id='circleWhiteUnderlay'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
           </svg>
 
-          <svg xmlns='http://www.w3.org/2000/svg' class='o animateCyan' viewBox="0 0 510.24 510.24" id='circleCyanUnderlay'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='o animateCyan' viewBox='0 0 510.24 510.24' id='circleCyanUnderlay'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
           </svg>
 
-          <svg xmlns='http://www.w3.org/2000/svg' class='o animateRed' viewBox="0 0 510.24 510.24" id='circleRed'>
-            <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
-          </svg>
-          <svg xmlns='http://www.w3.org/2000/svg' class='o animateCyan' viewBox="0 0 510.24 510.24" id='circleCyan'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='o animateRed' viewBox='0 0 510.24 510.24' id='circleRed'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
           </svg>
 
-          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox="0 0 510.24 510.24" id='circleWhite'><a href='#projects'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='o animateCyan' viewBox='0 0 510.24 510.24' id='circleCyan'>
+            <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
+          </svg>
+
+          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox='0 0 510.24 510.24' id='circleWhite'><a href='#projects'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/></a>
           </svg>
-          <div id='hello'>hello</div>
+          <!-- <div class='navNESW'>
+            <div class='navNorth'>
+              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+            </div>
+            <div class='navEast'>
+              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+            </div>
+            <div class='navSouth'>
+              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+            </div>
+            <div class='navWest'>
+              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+            </div>
+          </div> -->
+          <div id='hello'></div>
         </div>
-
+      </div>
+      <div class='navBottom'></div>
     </section>
 
     <section id='projects'>
@@ -42,58 +66,233 @@
           <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
         </a>
       </div>
-      <div class='row top'>
+      <div class='centerRowDouble'>
+
+        <div class='projectWrapper'>
           <div class='iconWrapper'>
             <a class='icon clock' href='http://www.orjon.com/colorclock'>
-                <img class='width65' src='./images/clock.png' alt='clock icon'>
+                <img class='width100' src='./images/clock.png' alt='clock icon'>
             </a>
           </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Unique interactive colour-clock.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/colorclock'>
+                <i class="fab fa-github"></i>&nbsp;HTML, Sass, JavaScript, jQuery
+              </a>
+          </div>
+        </div>
+
+        <div class='projectWrapper'>
           <div class='iconWrapper'>
             <a class='icon tetris' href='http://www.orjon.com/tetris'>
               <img  class='width100' src='./images/tetris.png' alt='tetris icon'>
             </a>
           </div>
-        <div class='iconWrapper'>
-          <a class='icon daftpunk' href='http://www.orjon.com/daftpunk'>
-            <img  class='width20' src='./images/daftpunk.png' alt='Daft Punk icon'>
-          </a>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Modern interpretation of the  classic 1980's puzzle game with original styling and music.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/tetris'>
+                <i class="fab fa-github"></i>&nbsp;HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
         </div>
-        <div class='iconWrapper'>
-          <a class='icon whackamole' href='http://www.orjon.com/mole'>
-            <img  class='width50' src='./images/whackamole.png' alt='Whack-a-mole icon'>
-          </a>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon daftpunk' href='http://www.orjon.com/daftpunk'>
+              <img  class='width90' src='./images/daftpunk.png' alt='Daft Punk icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Daft Punk sample trigger-board with adjustable playback speed.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/daftpunk'>
+                <i class="fab fa-github"></i>&nbsp;HTML, CSS, JavaScript
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon whackamole' href='http://www.orjon.com/mole'>
+              <img  class='width90' src='./images/whackamole.png' alt='Whack-a-mole icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Whack-a-Mole game. How many little critters can you get in 60 seconds?</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/whack-a-mole'>
+                <i class="fab fa-github"></i>&nbsp;HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class='row bottom'>
-        <div class='iconWrapper'>
-          <a class='icon project4' href='http://www.orjon.com/project4'>
-              <img  class='width75' src='./images/project4.png' alt='project4 icon'>
-          </a>
+      <div class='centerRowDouble'>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon project4' href='http://www.orjon.com/project4'>
+                <img  class='width100' src='./images/project4.png' alt='project4 icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Full stack book-keeping application with a clean and easily-understood interface.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/project4'>
+                <i class="fab fa-github"></i>&nbsp;React.js, Sass, Python, Flask, Axios, PostgreSQL, SQLAlchemy, Marshmallow, Heroku, Yarn
+              </a>
+            </p>
+          </div>
         </div>
-        <div class='iconWrapper'>
-          <a class='icon rockPaperScissors' href='http://www.orjon.com/rockpaperscissors'>
-              <img class='width50' src='./images/hand_select_rock-white.png'alt='rock-paper-scissors icon'>
-          </a>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon rockPaperScissors' href='http://www.orjon.com/rockpaperscissors'>
+                <img class='width90' src='./images/hand_select_rock-white.png'alt='rock-paper-scissors icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Rock Paper Scissors &<br>Rock Paper Scissors Lizard Spock games.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/RockPaperScissors'>
+                <i class="fab fa-github"></i>&nbsp;HTML, Sass, JavaScript
+              </a>
+            </p>
+          </div>
         </div>
-        <div class='iconWrapper'>
-          <a class='icon weather' href='http://www.orjon.com/weather'>
-              <img  class='width65' src='./images/weather.png' alt='weather icon'>
-          </a>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon weather' href='http://www.orjon.com/weather'>
+                <img  class='width100' src='./images/weather.png' alt='weather icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Interactive World map of current weather conditions.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/weather'>
+                <i class="fab fa-github"></i>&nbsp;React.js, Sass, jQuery, Axios, Mapbox, OpenWeatherAPI, Webpack, Yarn
+              </a>
+            </p>
+          </div>
         </div>
-        <div class='iconWrapper'>
-          <a class='icon booker' href='http://www.orjon.com/booker'>
-              <img  class='width90' src='./images/booker.png' alt='booker icon'>
-          </a>
+
+        <div class='projectWrapper'>
+          <div class='iconWrapper'>
+            <a class='icon booker' href='http://www.orjon.com/booker'>
+                <img  class='width100' src='./images/booker.png' alt='booker icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Full stack social book-sharing application. Allows users to share their books which each other.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/booker'>
+                <i class="fab fa-github"></i>&nbsp;React.js, MongoDB, Mongoose, Node.js, Express, Axios, Bulma, Mapbox, Yarn
+              </a>
+            </p>
+          </div>
         </div>
 
       </div>
-      <div class='navBottom'></div>
+      <div class='navBottom'>
+        <a href='#bio'>
+          <img class='navArrow' onscroll='scrollHide' src='./images/arrowWhite100.png' alt='navigate back button'>
+        </a>
+      </div>
   </section>
+
+
+      <section id='bio'>
+        <div class='navTop'>
+          <a href='#projects'>
+            <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+          </a>
+        </div>
+
+        <div class='centerRowSingle'>
+          <div class='bioWrapper'>
+            <div class='detailsWrapper'>
+              <div class='name'>Orjon de Roo</div>
+              <div class='qualification'>B.Sc.(Hons) Product Design</div>
+              <div class='contact'>
+                <div class='contactIcons'>
+                  <a href='mailto:mail@orjon.com'>
+                    <i class="far fa-envelope"></i>
+                  </a>
+                  <a href='tel:+447848890660'>
+                    <i class="fa fa-mobile-alt"></i>
+                  </a>
+                  <a href='https://github.com/orjon'>
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href='https://www.linkedin.com/in/orjon'>
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+
+                <div class='contactText'>
+                  <a href='mailto:mail@orjon.com'>
+                    mail@orjon.com
+                  </a>
+                  <a href='tel:+447848890660'>
+                    0784 8890660
+                  </a>
+                  <a href='https://github.com/orjon'>
+                    gitHub.com/orjon
+                  </a>
+                  <a href='https://www.linkedin.com/in/orjon'>
+                    linkedin.com/in/orjon
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class='bioTextWrapper'>
+              <p class='bioText'>Senior 3d designer, visualiser, and obsessive tinkerer with over twenty years’ experience working with leading brand agencies, architects, developers and product designers in Europe, the Middle East and Africa.<br>Recently completed an immersive full stack web development course. Looking for opportunities that would allow me to further develop my software skills whilst utilising my design experience.</p>
+
+            </div>
+          </div>
+
+          <div class='techIconsWrapper'>
+            <div class='rowIcons'>
+              <img src='./images/techIcons/javascript.png'>
+              <img src='./images/techIcons/jquery.png'>
+              <img src='./images/techIcons/sass.png'>
+              <img src='./images/techIcons/react.png'>
+              <img src='./images/techIcons/html.png'>
+              <img src='./images/techIcons/postgresql.png'>
+              <img src='./images/techIcons/mongodb.png'>
+              <img src='./images/techIcons/python.png'>
+              <img src='./images/techIcons/nodejs.png'>
+              <img src='./images/techIcons/express.png'>
+              <img src='./images/techIcons/arduino.png'>
+              <img src='./images/techIcons/atom.png'>
+              <img src='./images/techIcons/heroku.png'>
+              <img src='./images/techIcons/insomnia.png'>
+              <img src='./images/techIcons/robo3t.png'>
+              <img src='./images/techIcons/3dsmax.png'>
+              <img src='./images/techIcons/vray.png'>
+              <img src='./images/techIcons/fusion360.png'>
+              <img src='./images/techIcons/autocad.png'>
+              <img src='./images/techIcons/photoshop.png'>
+              <img src='./images/techIcons/git.png'>
+            </div>
+          </div>
+        </div>
+
+        <div class='navBottom'></div>
+    </section>
+
+
 
     <footer>
       <div id='displayVersion' class='text'>
-          <span><a href='https://github.com/orjon/project-gallery'>v1.4</a></span> 2019.05.09
+          <span><a href='https://github.com/orjon/project-gallery'>v2.0</a></span> 2019.05.15
       </div>
 
       <div id='displayContact' class='text'>

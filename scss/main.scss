@@ -1,5 +1,13 @@
 @import 'variables';
 
+@mixin flexColumnTop ()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flexColumnCenter ()
 {
   display: flex;
@@ -16,9 +24,36 @@
   align-items: center;
 }
 
-@import 'oAnimation';
+
+@mixin flexRowOverflow ()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexRowSpaceBetween ()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@mixin flexRowSpaceBetweenCenter()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
 @import 'nav';
-@import 'projectLinks';
+@import 'sectionintro';
+@import 'sectionbio';
+@import 'sectionprojects';
 @import 'footer';
 
 * {
@@ -33,9 +68,9 @@
 
 
 body {
-  color: $textNormal;
+  color: $textBright;
   background-color: $colorBackground;
-  font-weight: 300;
+  font-weight: $fontWeight;
   min-height:100vh;
   @include flexColumnCenter();
 }
@@ -44,17 +79,22 @@ body::-webkit-scrollbar {
   width: 0 !important
 }
 
-section#intro {
+section {
   height: 100vh;
   width: 99%;
   @include flexColumnCenter();
-  border: $devBorder solid red;
+  border: $devBorder solid white;
 }
-section#projects {
-  height: 100vh;
-  width: 99%;
-  @include flexColumnCenter();
-  border: $devBorder solid red;
 
-
+.centerRowSingle {
+  height: 90vh;
+  width: 90%;
+  @include flexRowCenter();
+  border: $devBorder solid orange;
+}
+.centerRowDouble {
+  height: 45vh;
+  width: 90%;
+  @include flexRowCenter();
+  border: $devBorder solid orange;
 }

@@ -1,17 +1,39 @@
 $colorBackground: black;
-$textBright: #aaa;
-$textNormal: #ccc;
+
+$circlePink: rgba(255,0,255,1);
+$circleBlue: rgba(0,220,235,.95);
+$circleWhite: rgba(255,255,255,.95);
+$textFooter: #ccc;
+$textNormal: #aaa;
+$textBright: #fff;
 $textDim: #666;
-$fontSize: 73vh;
-$fontSizeNew: 1.62vh;
+
+$fontScreenReference: 73vh;
+$fontSize: ($fontScreenReference/45);
+$fontWeight: 300;
+$fontSizeNormal: 1em;
 
 $colorHello: #EEE;
 $fontSizeHello: 4vh;
 
 $iconProject: 40%;
 $iconProjectHover: $iconProject + 5%;
+$fontProjectText: 1.75vh;
+$fontProjectGitHub: 1.5vh;
+
+$fontProjectText: $fontSizeNormal;
+$fontProjectTech: .85em;
+$fontProjectGitHub: .9em;
+
+$fontBioName: $fontSizeNormal*2.5;
+$fontBioQualification: $fontSizeNormal*1.5;
+$fontBioContact: 1em;
+$fontBioText: $fontSizeNormal;
+
 
 $devBorder: 0px;
+
+$navArrowPadding: 0; //1vh;
 
 .width10 {width: 10%};
 .width13 {width: 13%};

@@ -1,13 +1,3 @@
-//
-// :root {
-//   --animDist1: 0;
-//   --animDist2: 50;
-//   --animDist3: 50;
-//   --animDist4: 50;
-//   --animDist5: 50;
-//   --animDist6: 50;
-// }
-
 $animDist1: -16;
 $animDist2: -43;
 $animDist3: -82;
@@ -18,18 +8,18 @@ $animDist6: 97;
 
 $animDistXMult: .1;
 $animDistYMult: .01;
-$oSize: 75%;
+$oSize: 95%;
 
 
-.oWrapper{
+.introWrapper{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    postion: relative;
-    // border: 1px solid red;
+    position: relative;
+    border: $devBorder solid red;
 }
 
 .o {
@@ -38,19 +28,71 @@ $oSize: 75%;
   left: 0%;
 }
 
+.navNESW {
+    // display: none;
+    position: absolute;
+    height: $oSize/2;
+    width: $oSize/2;
+    height: 65vh;
+    width: 65vh;
+    border-radius: 50%;
+
+    @include flexRowOverflow();
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+    // display: none;
+
+    .navNorth, .navEast, .navSouth, .navWest{
+      display: flex;
+      justify-content: flex-start;
+      width:50%;
+      height: 50%;
+      border: $devBorder solid red;
+      border-radius: 10vh;
+      padding:5vh;
+
+      img {
+        margin-left:-4%;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Safari */
+        transform: rotate(-45deg); /* Standard syntax */
+
+      }
+    }
+
+    .navEast {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */
+      transform: rotate(90deg); /* Standard syntax */
+    }
+    .navWest {
+      -ms-transform: rotate(180deg); /* IE 9 */
+      -webkit-transform: rotate(180deg); /* Safari */
+      transform: rotate(180deg); /* Standard syntax */
+    }
+    .navSouth {
+      -ms-transform: rotate(270deg); /* IE 9 */
+      -webkit-transform: rotate(270deg); /* Safari */
+      transform: rotate(270deg); /* Standard syntax */
+    }
+    border: $devBorder solid orange;
+}
+
+
+
 #hello {
   color: $colorHello;
   font-size: $fontSizeHello;
-
   text-shadow: 00px 0px 4px  white;
-  // transform: scale(-1, 1);
+  // transform: scale(-1, 1); //backwards
 }
 
 #circleRed {
   position: absolute;
   will-change: position;
-  fill: rgba(255,0,255,1);
-  border: $devBorder solid rgb(255,0,255);
+  fill: $circlePink;
+  border: $devBorder solid $circlePink;
 }
 
 #circleCyanUnderlay {
@@ -62,8 +104,8 @@ $oSize: 75%;
 #circleCyan {
   position: absolute;
   will-change: position;
-  fill: rgba(0,220,235,.95);
-  border: $devBorder solid rgb(0,220,235);
+  fill: $circleBlue;
+  border: $devBorder solid $circleBlue;
 }
 
 #circleWhiteUnderlay {
@@ -75,11 +117,9 @@ $oSize: 75%;
 #circleWhite {
   position: absolute;
   a{
-    fill: rgba(255,255,255,0.97);
-    border: $devBorder solid rgb(255,255,255);
+    fill: $circleWhite;
+    border: $devBorder solid $circleWhite;
   }
-  // display:none;
-  // border: 1px solid lightgrey;
 }
 
 
