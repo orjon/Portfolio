@@ -8,7 +8,7 @@ $animDist6: 97;
 
 $animDistXMult: .1;
 $animDistYMult: .01;
-$oSize: 95%;
+// (var(--oSize)): 95%;
 
 
 .introWrapper{
@@ -22,17 +22,14 @@ $oSize: 95%;
     border: $devBorder solid red;
 }
 
-.o {
-  width:  100%;
-  height: $oSize;
-  left: 0%;
-}
+
+
 
 .navNESW {
     // display: none;
     position: absolute;
-    height: $oSize/2;
-    width: $oSize/2;
+    height: (var(--oSize))/2;
+    width: (var(--oSize))/2;
     height: 65vh;
     width: 65vh;
     border-radius: 50%;
@@ -83,7 +80,7 @@ $oSize: 95%;
 
 #hello {
   color: $colorHello;
-  font-size: $fontSizeHello;
+  font-size: (var(--fontSizeHello));
   text-shadow: 00px 0px 4px  white;
   // transform: scale(-1, 1); //backwards
 }

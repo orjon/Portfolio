@@ -1,3 +1,12 @@
+$mediaWidth1: 350px;
+$mediaWidth2: 500px;
+$mediaWidth3: 900px;
+$mediaWidth4: 1200px;
+
+$mediaHeight1: 500px;
+$mediaHeight2: 900px;
+$mediaHeight3: 1200px;
+
 $colorBackground: black;
 
 $circlePink: rgba(255,0,255,1);
@@ -13,10 +22,11 @@ $fontSize: ($fontScreenReference/45);
 $fontWeight: 300;
 $fontSizeNormal: 1em;
 
-$colorHello: #EEE;
-$fontSizeHello: 4vh;
 
-$iconProject: 40%;
+$colorHello: #EEE;
+// $fontSizeHello: 4vh;
+
+$iconProject: 50%;
 $iconProjectHover: $iconProject + 5%;
 $fontProjectText: 1.75vh;
 $fontProjectGitHub: 1.5vh;
@@ -25,9 +35,9 @@ $fontProjectText: $fontSizeNormal;
 $fontProjectTech: .85em;
 $fontProjectGitHub: .9em;
 
-$fontBioName: $fontSizeNormal*2.5;
-$fontBioQualification: $fontSizeNormal*1.5;
-$fontBioContact: 1em;
+$fontBioName: 2.5em;
+$fontBioQualification: 1.5em;
+$fontBioContact: $fontSizeNormal;
 $fontBioText: $fontSizeNormal;
 
 
