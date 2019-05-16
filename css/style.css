@@ -520,20 +520,17 @@ section {
   border: 0px solid orange; }
 
 .bioWrapper {
-  width: 70%;
+  width: 80%;
   display: block;
   align-content: center;
   border: 0px solid orange; }
 
 @media (min-width: 700px) {
-  section#bio {
-    height: 100vh; }
-
   .bioWrapper {
     display: flex;
     height: 90vh; } }
 @media (min-width: 1500px) {
   .bioWrapper {
-    width: 60%; } }
+    width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

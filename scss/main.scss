@@ -52,16 +52,13 @@ section {
 }
 
 .bioWrapper {
-  width: 70%;
+  width: 80%;
   display:block;
   align-content: center;
   border: $devBorder solid orange;
 }
 
 @media (min-width: $mediaWidth25) {
-  section#bio {
-    height: 100vh;
-  }
   .bioWrapper{
     display:flex;
     height: 90vh;
@@ -71,6 +68,6 @@ section {
 
 @media (min-width: $mediaWidth5) {
   .bioWrapper{
-    width: 60%;
+    width: 70%;
   }
 }
