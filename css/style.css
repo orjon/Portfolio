@@ -294,10 +294,10 @@
     font-size: 2.5em;
     border: 0px solid cyan; }
   .detailsWrapper .qualification {
-    font-size: 1.5em;
+    font-size: 1.2em;
     border: 0px solid cyan; }
   .detailsWrapper .contact {
-    padding-top: 10px;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -402,7 +402,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 45%;
   transition-timing-function: ease-in;
   -webkit-transition: width 0.15s;
   /* For Safari 3.1 to 6.0 */
@@ -410,7 +410,7 @@
   border: 0px solid cyan; }
 
 .icon:hover {
-  width: 55%;
+  width: 50%;
   transition-timing-function: ease-out;
   -webkit-transition: width 0.1s;
   /* For Safari 3.1 to 6.0 */
@@ -529,15 +529,14 @@ section {
     justify-content: center;
     align-items: center; } }
 .centerColumnSingle {
-  height: 100%;
+  height: 90%;
   width: 90%;
   align-content: center;
   border: 0px solid orange; }
 
 @media (min-width: 1200px) {
   .centerColumnSingle {
-    width: 80%;
-    align-content: center; } }
+    width: 90%; } }
 .centerRowDouble {
   height: 90vh;
   width: 90%;
