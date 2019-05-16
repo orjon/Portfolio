@@ -364,6 +364,7 @@
     height: 66%; } }
 @media (min-height: 900px) {
   .projectTile {
+    width: 33.3%;
     height: 40%; } }
 @media (min-height: 1200px) {
   .projectTile {
@@ -377,7 +378,7 @@
 @media (min-width: 900px) {
   .projectTile {
     width: 33.3%; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .projectTile {
     width: 25%;
     height: 50%; } }
@@ -519,7 +520,7 @@ section {
   border: 0px solid orange; }
 
 .bioWrapper {
-  width: 90%;
+  width: 70%;
   display: block;
   align-content: center;
   border: 0px solid orange; }
@@ -531,11 +532,8 @@ section {
   .bioWrapper {
     display: flex;
     height: 90vh; } }
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
   .bioWrapper {
-    width: 70%; } }
-@media (min-width: 1200px) {
-  .bioWrapper {
-    width: 50%; } }
+    width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
