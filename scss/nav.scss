@@ -49,6 +49,7 @@
 
 
 .navArrow {
+  display: none;
   height: 2.5vh;
   border: $devBorder solid cyan;
   opacity: 0.2;
@@ -61,5 +62,11 @@
     transition-timing-function: ease-out;
     -webkit-transition: opacity .2s; /* For Safari 3.1 to 6.0 */
     transition: opacity .2s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navArrow {
+    display: block;
   }
 }
