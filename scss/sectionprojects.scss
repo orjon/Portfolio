@@ -1,45 +1,45 @@
 
-.projectWrapper{
+.projectTile{
   width: 100%;
   height: 66.6%;
-  @include flexColumnTop();
+  @include flexColumnTopCenter();
   border: $devBorder solid yellow;
 }
 @media (min-height: $mediaHeight1) {
-  .projectWrapper{
+  .projectTile{
     height: 66%;
   }
 }
 
 @media (min-height: $mediaHeight2) {
-  .projectWrapper{
-    height: 66%;
+  .projectTile{
+    height: 40%;
   }
 }
 @media (min-height: $mediaHeight3) {
-  .projectWrapper{
+  .projectTile{
     height: 20%;
   }
 }
 
 @media (min-width: $mediaWidth1) {
-  .projectWrapper{
+  .projectTile{
     width: 100%;
   }
 }
 
 @media (min-width: $mediaWidth2) {
-  .projectWrapper{
+  .projectTile{
     width: 50%;
   }
 }
 @media (min-width: $mediaWidth3) {
-  .projectWrapper{
+  .projectTile{
     width: 33.3%;
   }
 }
-@media (min-width: $mediaWidth4) {
-  .projectWrapper{
+@media (min-width: $mediaWidth5) {
+  .projectTile{
     width: 25%;
     height: 50%;
   }
@@ -69,22 +69,22 @@
 
 
 .projectTextWrapper {
-  width: 85%;
+  width: 100%;
   border: $devBorder solid lime;
-  border-top: 1px solid $textBright;
   font-size: $fontProjectText;
-  @include flexColumnTop();
+  @include flexColumnTopCenter();
 
   .projectText {
-    width: 100%;
+    width: 85%;
     font-family: sans-serif;
     color: $textBright;
     border: $devBorder solid purple;
+    border-top: 1px solid $textBright;
     padding-top: 10px;
     text-align: justify;
   }
   .projectTech {
-    width: 100%;
+    width: 85%;
     padding-right: 5px;
     font-family: sans-serif;
     color: $textNormal;

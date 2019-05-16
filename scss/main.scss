@@ -4,60 +4,7 @@
 }
 
 @import 'variables';
-
-@mixin flexColumnTop ()
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-
-
-@mixin flexColumnCenter ()
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flexRowCenter ()
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@mixin flexRowOverflow ()
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-@mixin flexRowSpaceBetween ()
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-@mixin flexRowSpaceBetweenCenter()
-{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  align-items: flex-start;
-}
-
-
+@import 'flexLayouts';
 @import 'nav';
 @import 'sectionintro';
 @import 'sectionbio';
@@ -72,9 +19,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-size-adjust: auto;
 }
-
 
 body {
   color: $textBright;
@@ -87,51 +32,51 @@ body {
 .o {
   width:  (var(--oSize));
   height: (var(--oSize));
-
 }
-
 
 body::-webkit-scrollbar {
   width: 0 !important
 }
 
 section {
-  height: 100vh;
   width: 99%;
   @include flexColumnCenter();
   border: $devBorder solid white;
 }
 
-.centerRowSingle {
+.projectWrapper {
   height: 90vh;
-  width: 95%;
+  width: 90%;
+  @include flexRowOverflow();
   border: $devBorder solid orange;
 }
 
-
-.centerColumnSingle {
-  height: 90%;
+.bioWrapper {
   width: 90%;
+  display:block;
   align-content: center;
   border: $devBorder solid orange;
 
 }
 
-
-
-@media (min-width: 1200px) {
-  .centerRowSingle{
-    @include flexRowCenter();
+@media (min-width: $mediaWidth25) {
+  section#bio {
+    height: 100vh;
   }
-  .centerColumnSingle{
-    width: 90%;
+  .bioWrapper{
+    display:flex;
+    height: 90vh;
   }
 }
 
+@media (min-width: $mediaWidth4) {
+  .bioWrapper{
+    width: 70%;
+  }
+}
 
-.centerRowDouble {
-  height: 90vh;
-  width: 90%;
-  @include flexRowOverflow();
-  border: $devBorder solid orange;
+@media (min-width: $mediaWidth5) {
+  .bioWrapper{
+    width: 50%;
+  }
 }

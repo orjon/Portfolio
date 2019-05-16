@@ -11,15 +11,16 @@ $animDistYMult: .01;
 // (var(--oSize)): 95%;
 
 
+
 .introWrapper{
     width: 100%;
-    height: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    border: $devBorder solid red;
+    border: $devBorder solid orange;
 }
 
 

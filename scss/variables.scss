@@ -1,7 +1,9 @@
 $mediaWidth1: 350px;
 $mediaWidth2: 500px;
+$mediaWidth25: 700px;
 $mediaWidth3: 900px;
-$mediaWidth4: 1200px;
+$mediaWidth4: 1000px;
+$mediaWidth5: 1200px;
 
 $mediaHeight1: 500px;
 $mediaHeight2: 900px;
@@ -22,9 +24,7 @@ $fontSize: ($fontScreenReference/45);
 $fontWeight: 300;
 $fontSizeNormal: 1em;
 
-
 $colorHello: #EEE;
-// $fontSizeHello: 4vh;
 
 $iconProject: 45%;
 $iconProjectHover: $iconProject + 5%;
@@ -40,10 +40,9 @@ $fontBioQualification: 1.2em;
 $fontBioContact: $fontSizeNormal;
 $fontBioText: $fontSizeNormal;
 
-
 $devBorder: 0px;
 
-$navArrowPadding: 0; //1vh;
+$navArrowPadding: 0;
 
 .width10 {width: 10%};
 .width13 {width: 13%};
