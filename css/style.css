@@ -288,8 +288,11 @@
   .detailsWrapper .name {
     font-size: 2.5em;
     border: 0px solid cyan; }
+  .detailsWrapper .strapline {
+    font-size: 1.5em;
+    border: 0px solid cyan; }
   .detailsWrapper .qualification {
-    font-size: 1.2em;
+    font-size: 1em;
     border: 0px solid cyan; }
   .detailsWrapper .contact {
     padding: 10px 0;
@@ -378,7 +381,7 @@
 @media (min-width: 900px) {
   .projectTile {
     width: 33.3%; } }
-@media (min-width: 1500px) {
+@media (min-width: 1220px) {
   .projectTile {
     width: 25%;
     height: 50%; } }
@@ -529,7 +532,7 @@ section {
   .bioWrapper {
     display: flex;
     height: 90vh; } }
-@media (min-width: 1500px) {
+@media (min-width: 1220px) {
   .bioWrapper {
     width: 70%; } }
 
