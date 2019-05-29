@@ -328,13 +328,13 @@
   justify-content: flex-start;
   align-items: flex-start; }
   .bioTextWrapper .bioText {
-    font-family: sans-serif;
     color: #fff;
     border: 0px solid purple;
-    padding-top: 10px;
+    padding-top: 25px;
     text-align: justify; }
 
 .techIconsWrapper {
+  padding-top: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -383,10 +383,10 @@
     width: 33.3%; } }
 @media (min-width: 1220px) {
   .projectTile {
-    width: 25%;
+    width: 33.3%;
     height: 50%; } }
 .iconWrapper {
-  width: 100%;
+  width: 75%;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -427,7 +427,7 @@
     color: #fff;
     border: 0px solid purple;
     border-top: 1px solid #fff;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: justify; }
   .projectTextWrapper .projectTech {
     width: 85%;
@@ -435,7 +435,7 @@
     font-family: sans-serif;
     color: #aaa;
     border: 0px solid yellow;
-    padding-top: 5px; }
+    padding-top: 10px; }
   .projectTextWrapper i {
     font-size: 0.9em; }
   .projectTextWrapper a {

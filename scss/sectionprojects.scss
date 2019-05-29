@@ -41,13 +41,13 @@
 }
 @media (min-width: $mediaWidth5) {
   .projectTile{
-    width: 25%;
+    width: 33.3%;
     height: 50%;
   }
 }
 
 .iconWrapper{
-  width: 100%;
+  width: 75%;
   height: 60%;
   @include flexColumnCenter();
   border: $devBorder solid salmon;
@@ -81,7 +81,7 @@
     color: $textBright;
     border: $devBorder solid purple;
     border-top: 1px solid $textBright;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: justify;
   }
   .projectTech {
@@ -90,7 +90,7 @@
     font-family: sans-serif;
     color: $textNormal;
     border: $devBorder solid yellow;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   i {

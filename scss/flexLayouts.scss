@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+@mixin flexColumnSpaceLeft ()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 @mixin flexColumnCenterLeft ()
 {
   display: flex;

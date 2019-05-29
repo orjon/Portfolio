@@ -18,7 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel='stylesheet' href='./css/style.css'>
-    <script>window.location = '#intro'</script>
+    <!-- <script>window.location = '#intro'</script> -->
 
   </head>
   <body>
@@ -45,29 +45,15 @@
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/>
           </svg>
 
-          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox='0 0 510.24 510.24' id='circleWhite'><a href='#projects'>
+          <svg xmlns='http://www.w3.org/2000/svg' class='o' viewBox='0 0 510.24 510.24' id='circleWhite'><a href='#projectsA'>
             <path d='M425.2,255.12a165.67,165.67,0,0,0-13.46-65.94,168.46,168.46,0,0,0-90.68-90.69,168.36,168.36,0,0,0-131.88,0,168.52,168.52,0,0,0-90.69,90.69,168.36,168.36,0,0,0,0,131.88,168.46,168.46,0,0,0,90.69,90.68,168.25,168.25,0,0,0,131.88,0,168.4,168.4,0,0,0,90.68-90.68A165.67,165.67,0,0,0,425.2,255.12Zm85,0q0,69.42-34.22,128.06A254,254,0,0,1,383.18,476q-58.64,34.22-128.06,34.22T127.06,476a254,254,0,0,1-92.84-92.84Q0,324.54,0,255.12T34.22,127.06a253.9,253.9,0,0,1,92.84-92.84Q185.7,0,255.12,0T383.18,34.22A254,254,0,0,1,476,127.06Q510.24,185.7,510.24,255.12Z'/></a>
           </svg>
-          <!-- <div class='navNESW'>
-            <div class='navNorth'>
-              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
-            </div>
-            <div class='navEast'>
-              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
-            </div>
-            <div class='navSouth'>
-              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
-            </div>
-            <div class='navWest'>
-              <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
-            </div>
-          </div> -->
           <div id='hello'>hello</div>
         </div>
       <div class='navBottom'></div>
     </section>
 
-    <section id='projects'>
+    <section id='projectsA'>
       <div class='navTop'>
         <a href='#intro'>
           <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
@@ -171,6 +157,26 @@
           </div>
         </div>
 
+      </div>
+        <div class='navBottom'>
+          <a href='#projectsB'>
+            <img class='navArrow' onscroll='scrollHide' src='./images/arrowWhite100.png' alt='navigate back button'>
+          </a>
+        </div>
+    </section>
+
+
+    <section id='projectsB'>
+      <div class='navTop'>
+        <a href='#projectsA'>
+          <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
+        </a>
+      </div>
+      <div class='projectWrapper'>
+
+
+
+
         <div class='projectTile'>
           <div class='iconWrapper'>
             <a class='icon weather' href='http://www.orjon.com/weather'>
@@ -203,7 +209,74 @@
           </div>
         </div>
 
+
+        <div class='projectTile'>
+          <div class='iconWrapper'>
+            <a class='icon aboutTime' href='http://www.orjon.com/abouttime'>
+              <img  class='width100' src='./images/abouttime.png' alt='About Time icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Approximate clock</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/abouttime'>
+                <i class="fab fa-github"></i>&nbsp;Electronics, PIC, HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class='projectTile'>
+          <div class='iconWrapper'>
+            <a class='icon timeFrame' href='http://www.orjon.com/timeframe'>
+              <img  class='width90' src='./images/timeframe.png' alt='Time Frame icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Random pattern clock.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/timeframe'>
+                <i class="fab fa-github"></i>&nbsp;Electronics, PIC, HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class='projectTile'>
+          <div class='iconWrapper'>
+            <a class='icon colorone' href='http://www.orjon.com/colorone'>
+              <img  class='width90' src='./images/colorone.png' alt='Color One icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Minimalist color clock.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/colorone.web'>
+                <i class="fab fa-github"></i>&nbsp;Electronics, Arduino, HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
+        </div>
+
+
+        <div class='projectTile'>
+          <div class='iconWrapper'>
+            <a class='icon colortwo' href='http://www.orjon.com/colortwo'>
+              <img  class='width90' src='./images/colortwo.png' alt='Color Two icon'>
+            </a>
+          </div>
+          <div class='projectTextWrapper'>
+            <p class='projectText'>Color clock.</p>
+            <p class='projectTech'>
+              <a href='https://github.com/orjon/colortwo.web'>
+                <i class="fab fa-github"></i>&nbsp;Electronics, Arduino, HTML, Sass, JavaScript, jQuery
+              </a>
+            </p>
+          </div>
+        </div>
+
       </div>
+
       <div class='navBottom'>
         <a href='#bio'>
           <img class='navArrow' onscroll='scrollHide' src='./images/arrowWhite100.png' alt='navigate back button'>
@@ -214,7 +287,7 @@
 
       <section id='bio'>
         <div class='navTop'>
-          <a href='#projects'>
+          <a href='#projectsB'>
             <img class='navArrow' src='./images/arrowWhite100.png' alt='navigate back button'>
           </a>
         </div>

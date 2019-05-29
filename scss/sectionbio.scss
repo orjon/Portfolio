@@ -55,15 +55,16 @@
   @include flexColumnTopLeft();
 
   .bioText {
-    font-family: sans-serif;
+    // font-family: sans-serif;
     color: $textBright;
     border: $devBorder solid purple;
-    padding-top: 10px;
+    padding-top: 25px;
     text-align: justify;
   }
 }
 
 .techIconsWrapper{
+  padding-top: 50px;
   @include flexRowSpaceBetweenCenter();
   border: $devBorder solid yellow;
 
