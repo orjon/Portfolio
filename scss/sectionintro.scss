@@ -80,9 +80,12 @@ $animDistYMult: .01;
 
 
 #hello {
-  color: $colorHello;
   font-size: (var(--fontSizeHello));
   text-shadow: 00px 0px 4px  white;
+  a {
+      text-decoration: none;
+      color: $colorHello;
+  }
   // transform: scale(-1, 1); //backwards
 }
 

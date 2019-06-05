@@ -184,9 +184,11 @@
     /* Standard syntax */ }
 
 #hello {
-  color: #EEE;
   font-size: var(--fontSizeHello);
   text-shadow: 00px 0px 4px  white; }
+  #hello a {
+    text-decoration: none;
+    color: #EEE; }
 
 #circleRed {
   position: absolute;
@@ -437,7 +439,7 @@
     border: 0px solid yellow;
     padding-top: 10px; }
   .projectTextWrapper i {
-    font-size: 0.9em; }
+    font-size: 1em; }
   .projectTextWrapper a {
     padding-top: 5px;
     width: 100%;
